@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*Limitador de tamanho máximo*/
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+.container-left {
+    display: inline-block;
+    width: 60%;
+}
+
+.container-right {
+    display: inline-block;
+    background-color: rgb(93, 93, 125, 0.16);
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+}
+
+img {
+    position: relative;
+    top: 25%;
+    right: 127px;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+    color: #5D5D7D;
+    width: 368px;
+    margin-top: 381px;
+    margin-left: 136px;
+}
+
+p {
+    font-size: 28px;
+    line-height: 48px;
+    color: #5D5D7D;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    width: 540px;
+    height: 144px;
+    margin-left: 136px;
+}
+
+/*--- HEADER GERAL ---*/
+header {
+    margin-top: 23px;
+}
+
+/*--- LINKS GERAIS DO HEADER ---*/
+a {
+    font-size: 28px;
+    line-height: 41px;
+    color: #5D5D7D;
+    text-decoration: none;
+    margin-left: 41px;
+}
+
+.a-first {
+    margin-left: 57px;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    background: #9499EA;
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+    border: none;
+    border-radius: 30px;
+    margin-left: 136px;
+    margin-top: 15px;
+
+    /*TEXTO DO BOTÃO*/
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1150px) {
+    .container-left {
+        width: 100%;
+        height: 50%;
+        padding: 0px;
+        margin: 0px;
+        display: block;
+    }
+
+    .container-right {
+        display: block;
+        height: auto;
+        /*Usa todo o espaço que tem*/
+        width: 100%;
+        position: static;
+        padding: 40px;
+
+    }
+
+    img {
+        position: static;
+        max-width: 90%;
+    }
+
+    header {
+        display: none;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 52px;
+        width: auto;
+        margin-top: 58px;
+        margin-left: 52px;
+        margin-right: 52px;
+        text-align: center;
+    }
+
+    p {
+        margin: 15px 40px;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        width: auto;
+        /*Faz o texto ficar organizado e centralizado*/
+    }
+
+    button {
+        margin: 0px auto;
+        display: block;
+        /*Precisa disso para ele ser alinhado ao centro*/
+    }
+}
+
+/*Para outras dimenões de tela, usar o 
+@media do mesmo jeito que acima, mas 
+mudando o tamanho máximo e suas respectivas
+configurações.*/
